@@ -1,0 +1,34 @@
+
+<div class="box">
+<p id="nombreUser"><%= info.nombre %></p>
+
+<div class="datagrid"><table >
+
+
+    <tr>   
+        <th>Roles</th>
+        <th>Aplicacion</th>
+        <th></th>
+        
+        
+    </tr>
+    <tr>
+     <% for (var i in info.roles) { %>
+        <% var usuaria = info.roles[i]; %> 
+
+
+
+            
+             <td><%= usuaria %></td> 
+             <td><%= info.apps[i] %></td> 
+             <td> <a href="/elimina/<%= info.nombre %>/<%= info.apps[i] %>"><button class = "boton1" id="Eliminar">Eliminar</button></a></td>
+        
+    </tr>
+
+
+                
+
+    <%  }; %>
+     </div>       
+     </table> 
+     </div>

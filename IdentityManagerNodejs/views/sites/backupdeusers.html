@@ -1,0 +1,56 @@
+
+
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+function recarga(){
+location.href=location.href
+}
+setInterval('recarga()',20000)
+</script>
+
+
+
+
+<h1> Usuarios </h1>
+
+<table>
+
+    <tr>   
+        <td>Nombre</td>
+        <td>Address</td>
+        
+        
+    </tr>
+
+    <% for (var i in usuarios) { %>
+        <% var usuario = usuarios[i]; %> 
+
+        <tr>
+            
+<!-- 
+            <td> 
+                <a href="/muestra/<%= usuario.name%>"> <%= usuario.name %></a>
+            </td>
+
+            
+
+            <td> 
+                <%= usuario.addr1 %>
+            </td>
+            <td> 
+                <%= usuario.roles %>
+            </td> -->
+            <td> 
+                <%= a %>
+            </td>
+            
+
+            
+        </tr>
+
+    <%  }; %>
+</table>
+
+<a href="/users/new"><button type="button">Registrar</button></a>

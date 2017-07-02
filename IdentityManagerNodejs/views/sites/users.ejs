@@ -1,0 +1,50 @@
+
+               
+    
+
+
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+function recarga(){
+location.href=location.href
+}
+setInterval('recarga()',20000)
+</script>
+
+<div class="box">
+<div class="datagrid"><table >
+
+    <tr>   
+        <th>Nombre</th>
+        <th>Address</th>
+        
+        
+    </tr>
+    <tr>
+     <% for (var i in info.nombres) { %>
+        <% var usuario = info.nombres[i]; %> 
+
+
+
+             <td><a href="/muestra/<%= usuario %>"><%= usuario %></td>  
+    
+             <td><%= info.addr[i] %></td> 
+
+    </tr>
+
+
+                
+
+    <%  }; %>
+            
+     </table>       
+
+        </div>    
+      
+
+<a href="/users/new"><button type="button"class = "boton" id="RegistraApp">Registrar</button></a>
+
+</div>
+

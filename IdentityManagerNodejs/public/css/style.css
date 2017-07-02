@@ -1,0 +1,155 @@
+.general{
+	float: right;
+}
+
+.boton{
+    background: #3d85c6;
+    background: -webkit-linear-gradient(#3d85c6, #073763);
+    background: linear-gradient(#3d85c6, #073763);
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 20px;
+    width: 13%;
+    height: 50%;
+    color: #ffffff;
+    display: inline-block;
+    font: normal 700 24px/1 "Calibri", sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px #000000;
+}
+
+.boton1{
+   background: #3d85c6;
+    background: -webkit-linear-gradient(#3d85c6, #073763);
+    background: linear-gradient(#3d85c6, #073763);
+    border-radius: 5px;
+    
+    margin: 13px;
+    width: 25%;
+    
+    color: #ffffff;
+    display: inline-block;
+    font: normal 700 24px/1 "Calibri", sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px #000000;
+}
+
+.footer {
+  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+ 
+}
+
+
+body {
+  background-image: url("/images/skyline.jpg");
+
+}
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.datagrid table { border-collapse: collapse; text-align: left; width: 100%; } 
+.datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif;width: 60%;margin:auto;
+ background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px;
+  -moz-border-radius: 3px; border-radius: 3px; }
+  .datagrid table td, .datagrid table th { 
+    padding: 3px 10px; font-size: 25px;
+    text-align: center; }
+  .datagrid table  th {
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #0070A8; font-size: 22px; }
+
+.box{
+text-align: center;}
+h1{
+	text-align: center;
+}
+
+#RegistraApp{
+	margin-top: 10px;
+
+}
+h1,h2,p{
+	color: #a1a8af;
+    font-size: 50px;
+}
+tr:nth-child(even) {
+    background-color:#c1c1c1;}
+
+.formulario{
+	       border: 2px solid;
+    border-color: #073763;
+    border-radius: 5px;
+    background-color: rgba(178, 209, 226, 0.58);
+    margin: auto;
+    width: 30%;
+    height: 120px;
+    font-size: 20px;
+    padding: 20px;
+
+}
+input{
+	background-color: aliceblue;
+  width: 400px;
+
+}
+p{
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+
+ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: #3498db, #2980b9;
+    background-image: linear-gradient(to bottom, #70b6e4, #0e4163);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 30px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-image: linear-gradient(to bottom, #70B6E4, #051824);
+}
+.form{
+    padding: 7px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form1{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+th,td{
+  height: 25px;
+ 
+}
+#nombreUser{
+  color: white;
+  font-size: 40px;
+  text-transform: capitalize;
+
+
+}

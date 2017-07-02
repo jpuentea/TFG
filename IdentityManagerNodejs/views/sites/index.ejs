@@ -1,0 +1,75 @@
+
+
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+function recarga(){
+location.href=location.href
+}
+setInterval('recarga()',20000)
+</script>
+
+<script>
+     $(function(){ 
+     var url = "/apps";
+     console.log("esta")
+        var socket = io.connect('http://localhost:3000/apps');
+
+        var addr = "0xd7f2cf0d7fdbd1c1388eacf30b2b3ec0b6a6d008";
+        console.log(addr)
+
+        socket.emit('hola', { addr: addr });
+
+        socket.on('malnombreapp', function (data) {
+             alert("Hello! I am an alert box!!");
+            console.log("Lo has hecho mal");});      
+             
+    });     
+          
+    
+</script>
+
+<div class="box">
+
+<h1> Aplicaciones </h1>
+
+<div class="datagrid"><table>
+
+    <tr>   
+        <th>Nombre</th>
+        <th>Direccion</th>
+        <th>Roles</th>
+        
+    </tr>
+
+    <% for (var i in info.nombres) { %>
+        <% var aplicacion = info.nombres[i]; %> 
+
+        <tr>
+            
+
+            <td> 
+                <%= aplicacion %>
+            </td>
+
+            
+
+            <td> 
+                <%= info.addr[i] %>
+            </td>
+
+            <td> 
+                <%= info.roles[i] %>
+            </td>
+
+            
+        </tr>
+
+    <%  }; %>
+</table></div>
+
+ <a href="/apps/new"><button type="button" class = "boton" id="RegistraApp">Registrar</button></a> 
+</div>
+
+
+

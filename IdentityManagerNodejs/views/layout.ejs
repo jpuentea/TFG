@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+     <link rel='stylesheet' href='/css/style.css' />
+
+     
+
+
+   
+</head>
+<body>
+
+    <header>
+       <div>     
+    <nav id="nav">
+    <ul>
+        <li class ="tab"><a href="/apps"> Apps </a></li>
+        <li class ="tab"><a href="/users"> Usuarios </a></li>
+    </ul>     
+        
+    </nav>
+        <h1>Gestor de Identidad de Contratos Inteligentes en Blockchain</h1>
+        </div>
+    </header>
+
+
+    <% if (messages.info) { %>
+       <article id='flashinfo'>
+         <h3>Información de interés:</h3>
+         <ul>
+            <% for (var i in messages.info) { %>
+              <li> <%= messages.info[i] %> </li>
+            <% } %>
+         </ul>
+       </article>
+    <% } %>
+
+    <% if (messages.success) { %>
+       <article id='flashsuccess'>
+         <h3>Tareas completadas con éxito:</h3>
+         <ul>
+            <% for (var i in messages.success) { %>
+               <li> <%= messages.success[i] %> </li>
+            <% } %>
+         </ul>
+       </article>
+    <% } %>
+
+    <% if (messages.error) { %>
+       <article id='flasherror'>
+         <h3>Errores encontrados:</h3>
+         <ul>
+            <% for (var i in messages.error) { %>
+              <li> <%= messages.error[i] %> </li>
+            <% } %>
+         </ul>
+       </article>
+    <% } %>
+
+    <section>
+        <div>
+          <%- body %>
+        </div>
+    </section>
+
+    <footer class="footer">
+      Trabajo de Fin de Grado de Javier Puente Aller. Universidad Politécnica de Madrid
+    </footer>
+
+</body>
+</html>
