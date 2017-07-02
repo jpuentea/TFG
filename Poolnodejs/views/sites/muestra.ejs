@@ -1,0 +1,28 @@
+<div class="datagrid"><table>
+
+    <tr>   
+        <th>Encuestado</th>
+        <th>Puntuación</th>
+        <th></th>
+        
+        
+    </tr>
+    <tr>
+     <% for (var i in encuesta.encuestados) { %>
+        <% var encuestado = encuesta.encuestados[i]; %> 
+
+
+
+            
+             <td><%= encuestado %></td> 
+             <td><%= encuesta.puntuaciones[i] %></td>
+            <td> <a href="/vota/<%= encuesta.nombre %>/<%= encuestado %>"><button class = "boton" id="RegistraApp">Votar</button></a></td>
+        
+    </tr>
+
+
+                
+
+    <%  }; %>
+            
+     </table> </div>

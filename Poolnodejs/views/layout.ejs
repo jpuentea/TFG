@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+     <link rel='stylesheet' href='/css/style.css' />
+
+   
+</head>
+<body>
+
+    <header>
+        <div>    
+    <nav id="nav">
+    <ul>
+        <li class = "tab"><a href="/encuestas"> Encuestas </a></li>
+        <li class = "tab"><a href="/"> Token </a></li>
+         
+    </ul>    
+    </nav>
+        <h1>Bienvenido a la aplicación de las Elecciones Generales</h1>
+        </div>
+    </header>
+
+
+    <% if (messages.info) { %>
+       <article id='flashinfo'>
+         <h3>Información de interés:</h3>
+         <ul>
+            <% for (var i in messages.info) { %>
+              <li> <%= messages.info[i] %> </li>
+            <% } %>
+         </ul>
+       </article>
+    <% } %>
+
+    <% if (messages.success) { %>
+       <article id='flashsuccess'>
+         <h3>Tareas completadas con éxito:</h3>
+         <ul>
+            <% for (var i in messages.success) { %>
+               <li> <%= messages.success[i] %> </li>
+            <% } %>
+         </ul>
+       </article>
+    <% } %>
+
+    <% if (messages.error) { %>
+       <article id='flasherror'>
+         <h3>Errores encontrados:</h3>
+         <ul>
+            <% for (var i in messages.error) { %>
+              <li> <%= messages.error[i] %> </li>
+            <% } %>
+         </ul>
+       </article>
+    <% } %>
+
+    <section>
+        <div>
+          <%- body %>
+        </div>
+    </section>
+
+    <footer class="footer">
+      Javier Puente Aller
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+  background-image: url("/images/eleccion1.jpg");
+  background-size: cover;
+
+}
+
+.formulario{
+	    border: 2px solid ;
+	    border-color: #073763;
+
+    border-radius: 5px;
+    background-color: rgba(173, 143, 112, 0.58);
+    margin: auto;
+    width: 20%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.box{
+text-align: center;}
+
+.footer {
+  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+ 
+}
+input{
+
+	background-color: #dedcc6;
+}
+h1,h2,p{
+	text-align: center;
+	color :#58584a;
+}
+
+.token{
+	    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    position: fixed;
+    left: 450px;
+    background: rgba(105, 90, 90, 0.59);
+}
+
+
+.boton{
+	background:    #3d85c6;
+background:    -webkit-linear-gradient(#3d85c6, #073763);
+background:    linear-gradient(#4d4e38, #9a816c);
+border-radius: 5px;
+padding:       8px 20px;
+color:         #ffffff;
+display:       inline-block;
+font:          normal 700 24px/1 "Calibri", sans-serif;
+text-align:    center;
+text-shadow:   1px 1px #000000;
+}
+#RegistraApp{
+	margin-top: 10px;
+
+}
+.datagrid table { border-collapse: collapse; text-align: left; width: 100%; } 
+.datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif;width: 60%;margin:auto;
+ background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px;
+  -moz-border-radius: 3px; border-radius: 3px; }.datagrid table td, .datagrid table th { padding: 3px 10px; font-size: 20px; }
+  .datagrid table  th {
+  	 background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05,#9a816c ), color-stop(1, #4d4e38) );
+    background: -moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color: #4d4e38;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    border-left: 1px solid #4d4e38;
+    width: 100%;
+    text-align: center;
+}
+td{
+	text-align: center;
+}
+tr:nth-child(even) {
+    background-color:#eff1be;}
+
+    ul {
+      list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: #3498db, #2980b9;
+    background-image: linear-gradient(to bottom, #927c67, #35191b);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 30px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-image: linear-gradient(to bottom, #70B6E4, #051824);
+}
+p{
+  font-size: 25px;
+}
+h1{
+  font-size: 35px;
+  color: black;
+}
