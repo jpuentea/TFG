@@ -34,7 +34,7 @@ contract IdentityManager{
         bytes32 hash;
         bytes32 rol;
     }
-     
+      
     //almacén donde se encuentran todos los usuarios registrados.
     mapping(address => User) public users;
     
