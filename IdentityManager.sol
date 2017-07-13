@@ -116,7 +116,7 @@ contract IdentityManager{
 
                      }
                      
-                }else if (i == 2){  
+                }else if (i == (apps[aplicacion].roles.length - 1) ){  
                     WrongRole("El rol introducido no es valido");
                 }
 
